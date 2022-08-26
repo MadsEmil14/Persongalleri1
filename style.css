@@ -1,0 +1,47 @@
+.imagess {
+  max-width: 100%;
+
+  border: 2px solid;
+}
+article {
+  padding-bottom: 20px;
+}
+h2 {
+  margin: 0;
+  margin-bottom: 4px;
+  text-align: center;
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+}
+
+p:last-child {
+  padding-top: 4px;
+  text-decoration: underline;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  column-gap: 30px;
+}
+body {
+  background-color: white;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
